@@ -1,0 +1,19 @@
+.venv/
+.venv-*/
+.tools/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+.env
+.env.*
+!.env.example
+
+# Downloaded sources, replay caches, local runs, keys and toolchain receipts.
+data/
+**/data/follow_the_money/
+*.sqlite
+*.sqlite-*

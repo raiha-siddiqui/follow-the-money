@@ -1,0 +1,20 @@
+{
+  "tool": "Microsoft 365 Agents Playground",
+  "version": "0.2.29",
+  "sdk_version": "1.9.0",
+  "channel": "emulator",
+  "delivery_mode": "expectReplies",
+  "telemetry": false,
+  "root_http_status": 200,
+  "message_http_status": 200,
+  "case_id": "d69cc3a6-4278-4c55-b1f8-4232918a3adc",
+  "case_status": "awaiting_approval",
+  "created_by": "local-playground",
+  "evidence_sha256": "7a15c4a3ae4499502a0afe78ad4e63b03aebc94e11529300f1bafe2509a2a9b8",
+  "critic_claim_count": 12,
+  "physical_blockchain_calls": 0,
+  "approval": null,
+  "browser_visual_test": false,
+  "tenant_or_azure": false,
+  "review_status": "Historical pre-review anonymous Playground run. Current SDK endpoint requires an agent key or explicit anonymous opt-in and persistent quotas; authenticated HTTP regression is recorded in the review-fixes report."
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "ftm-gold-traces-v1",
+  "traces": [
+    {
+      "id": "doj-2025-exchange-deposit",
+      "benchmark_eligible": true,
+      "evidence_kind": "court_document",
+      "source_url": "https://www.justice.gov/usao-ma/media/1390101/dl?inline=",
+      "source_sha256": "53ae96300ca66650efac81fb629d080f17d73300e8c77a26629d757ef917bf5f",
+      "source_license": "US federal government court filing; public record",
+      "source_retrieved_at": "2026-10-26T21:39:27.517701+00:00",
+      "citation": "Case 1:25-cv-10413, Document 1-1, affidavit page 13, paragraphs 35–38, Figures 1–2 (PDF page 16).",
+      "chain": "bitcoin",
+      "seed": "1KmgC5oPi652sgHz5MByq9Au1pnKwtPj9D",
+      "seed_txid": "48388dd0482ae39ef56d8cd39374f7aa1a33fc347ce4ddbc66564379a6a628ea",
+      "seed_vout": 29,
+      "seed_units": 133272285,
+      "spend_txid": "c903bb557e868f2a484e7a49b3ce40978ab7eb9ea326ce165f98ade70e01c3bb",
+      "spend_vin": 0,
+      "endpoint": "1FUWzwzKq7G7Q2FTNvxNQYmJFxAmcHKb1S",
+      "endpoint_vout": 0,
+      "endpoint_units": 124016260,
+      "endpoint_label": "Binance deposit endpoint (historical court-filing assertion)",
+      "max_calls": 6,
+      "max_hops": 3,
+      "criterion": "Reach the cited endpoint through the exact published funding outpoint and spend, without traversing the endpoint.",
+      "limitations": [
+        "One-hop public trace; no general efficiency conclusion.",
+        "The filing's paragraph 38 uses intermediary-wallet language; the two cited txids directly connect in recorded chain data. No missing hop is invented.",
+        "The printed short suffix 9j9D differs from the full address suffix Pj9D; use the full address and txid, independently checked.",
+        "The exchange label is a published historical assertion, not proof of present control or account ownership."
+      ]
+    },
+    {
+      "id": "colonial-pipeline-2021",
+      "benchmark_eligible": false,
+      "evidence_kind": "court_document",
+      "source_url": "https://www.justice.gov/archives/opa/press-release/file/1402056/dl?inline",
+      "source_sha256": "4ff9bcbcbfd0fa0459a831f97d0192c4a5d8dbb1cba1a671748af2deb69f6d8f",
+      "citation": "Case 3:21-mj-70945-LB, Document 1, June 7 2021, pages 1, 6–7, paragraphs 1 and 28–34.",
+      "observations": [
+        {
+          "page": 6,
+          "paragraph": 29,
+          "reported_payment_total_satoshis": 7500050000,
+          "txid": null
+        },
+        {
+          "page": 7,
+          "paragraph": 32,
+          "reported_forward_amount_satoshis": 6370000000,
+          "txid": null
+        },
+        {
+          "page": 7,
+          "paragraph": 33,
+          "reported_subject_transfer_total_satoshis": 6960422177,
+          "txid": null
+        }
+      ],
+      "reason": "Full addresses are redacted and txids are absent. No chain edges or endpoint-call metric can be verified from this filing alone.",
+      "owner": "Research data owner",
+      "next_action": "Supply a separately published, citable unredacted trace with transaction IDs; do not reconstruct redacted identities."
+    }
+  ]
+}

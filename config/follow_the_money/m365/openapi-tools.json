@@ -1,0 +1,368 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Follow the Money — research review",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/v1/cases": {
+      "get": {
+        "summary": "List Cases",
+        "operationId": "list_cases",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response List Cases"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "Start Trace",
+        "operationId": "start_trace",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TraceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Start Trace"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/cases/{case_id}/summary": {
+      "get": {
+        "summary": "Get Case Summary",
+        "operationId": "get_case_summary",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "case_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Case Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Case Summary"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/memory/query": {
+      "post": {
+        "summary": "Query Memory",
+        "operationId": "query_case_memory",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemoryQuery"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Query Case Memory"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "MemoryQuery": {
+        "properties": {
+          "chain": {
+            "type": "string",
+            "enum": [
+              "bitcoin",
+              "tron"
+            ],
+            "title": "Chain"
+          },
+          "addresses": {
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{1,128}$"
+            },
+            "type": "array",
+            "maxItems": 100,
+            "minItems": 1,
+            "title": "Addresses"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "chain",
+          "addresses"
+        ],
+        "title": "MemoryQuery"
+      },
+      "TraceRequest": {
+        "properties": {
+          "chain": {
+            "type": "string",
+            "enum": [
+              "bitcoin",
+              "tron"
+            ],
+            "title": "Chain"
+          },
+          "seed": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{1,128}$",
+            "title": "Seed"
+          },
+          "seed_txid": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Seed Txid"
+          },
+          "seed_vout": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Seed Vout"
+          },
+          "goal": {
+            "type": "string",
+            "enum": [
+              "find_service_endpoint",
+              "bounded_exploration"
+            ],
+            "title": "Goal",
+            "default": "find_service_endpoint"
+          },
+          "max_calls": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 1.0,
+            "title": "Max Calls",
+            "default": 12
+          },
+          "max_hops": {
+            "type": "integer",
+            "maximum": 12.0,
+            "minimum": 0.0,
+            "title": "Max Hops",
+            "default": 5
+          },
+          "cluster_cap": {
+            "type": "integer",
+            "maximum": 500.0,
+            "minimum": 2.0,
+            "title": "Cluster Cap",
+            "default": 100
+          },
+          "strategy": {
+            "type": "string",
+            "enum": [
+              "priority",
+              "bfs"
+            ],
+            "title": "Strategy",
+            "default": "priority"
+          },
+          "draft_request": {
+            "type": "boolean",
+            "title": "Draft Request",
+            "default": false
+          },
+          "check_freeze_signals": {
+            "type": "boolean",
+            "title": "Check Freeze Signals",
+            "default": false
+          },
+          "request_id": {
+            "type": "string",
+            "title": "Request Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "chain",
+          "seed",
+          "request_id"
+        ],
+        "title": "TraceRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "HTTPBearer": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://deployment-required.invalid",
+      "description": "BLOCKED: replace only after approved tenant deployment and authentication setup"
+    }
+  ]
+}

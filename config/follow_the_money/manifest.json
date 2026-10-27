@@ -1,0 +1,328 @@
+{
+  "schema": "ftm-source-manifest-v1",
+  "artifacts": [
+    {
+      "id": "colonial-affidavit",
+      "source_url": "https://www.justice.gov/archives/opa/press-release/file/1402056/dl?inline",
+      "license": "US federal government court filing; public record",
+      "retrieved_at": "2026-10-26T21:31:35.768554+00:00",
+      "size_bytes": 411664,
+      "sha256": "4ff9bcbcbfd0fa0459a831f97d0192c4a5d8dbb1cba1a671748af2deb69f6d8f",
+      "download_operations_this_run": 1,
+      "revision": null,
+      "evidence_kind": "court_document"
+    },
+    {
+      "id": "doj-scam-2025",
+      "source_url": "https://www.justice.gov/usao-ma/media/1390101/dl?inline=",
+      "license": "US federal government court filing; public record",
+      "retrieved_at": "2026-10-26T21:39:27.517701+00:00",
+      "size_bytes": 1308900,
+      "sha256": "53ae96300ca66650efac81fb629d080f17d73300e8c77a26629d757ef917bf5f",
+      "download_operations_this_run": 1,
+      "revision": null,
+      "evidence_kind": "court_document"
+    },
+    {
+      "id": "esplora-375bd4fc0cd994d7ae625c63d4f6603089f87734623fa4d72961c78042ea68a0",
+      "source_url": "https://mempool.space/api/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b/outspends",
+      "retrieved_at": "2026-10-26T20:19:59.200915+00:00",
+      "sha256": "e062e2a6db656cc08172a504cee85612101aca6b18fbfcf9efc735aaa237bd6a",
+      "license": "Public blockchain facts; explorer terms apply",
+      "evidence_kind": "public_recording",
+      "size_bytes": 17,
+      "status": 200,
+      "local_cache": "data/follow_the_money/replay-public/375bd4fc0cd994d7ae625c63d4f6603089f87734623fa4d72961c78042ea68a0.json"
+    },
+    {
+      "id": "esplora-3b432d48be2ea4c3b73f5a6a8cb2831a3cbe4553e7b9ea9c20e606e08bff96c6",
+      "source_url": "https://mempool.space/api/address/1KmgC5oPi652sgHz5MByq9Au1pnKwtPj9D/txs",
+      "retrieved_at": "2026-10-26T21:44:42.860865+00:00",
+      "sha256": "a1815c75d7329cd7ccbd310b3ca95161bbdd8003d9f90d975e390304947f04da",
+      "license": "Public blockchain facts; explorer terms apply",
+      "evidence_kind": "public_recording",
+      "size_bytes": 370517,
+      "status": 200,
+      "local_cache": "data/follow_the_money/replay-public/3b432d48be2ea4c3b73f5a6a8cb2831a3cbe4553e7b9ea9c20e606e08bff96c6.json"
+    },
+    {
+      "id": "esplora-54625730db7b47071068e08ed17f9661070a22011204f719a694fd73f256d912",
+      "source_url": "https://mempool.space/api/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+      "retrieved_at": "2026-10-26T20:19:57.968511+00:00",
+      "sha256": "1375bd578e9801dab814630bcc01952eff902f3cd6e4981561cac5e5e406a4b3",
+      "license": "Public blockchain facts; explorer terms apply",
+      "evidence_kind": "public_recording",
+      "size_bytes": 1223,
+      "status": 200,
+      "local_cache": "data/follow_the_money/replay-public/54625730db7b47071068e08ed17f9661070a22011204f719a694fd73f256d912.json"
+    },
+    {
+      "id": "esplora-6bd7397aa9612ac46e38cb5ead688eb02ef42453d6b631ad64b8091a5e5234d2",
+      "source_url": "https://mempool.space/api/tx/c903bb557e868f2a484e7a49b3ce40978ab7eb9ea326ce165f98ade70e01c3bb",
+      "retrieved_at": "2026-10-26T21:41:33.035601+00:00",
+      "sha256": "b67bab87bc1895566e49c02a18df2bcc48d5f88dcfc8a87c134135551b113d89",
+      "license": "Public blockchain facts; explorer terms apply",
+      "evidence_kind": "public_recording",
+      "size_bytes": 1837,
+      "status": 200,
+      "local_cache": "data/follow_the_money/replay-public/6bd7397aa9612ac46e38cb5ead688eb02ef42453d6b631ad64b8091a5e5234d2.json"
+    },
+    {
+      "id": "esplora-73463eaa7afa8013928e6a265586cbafef3e26fe4dd11e87974b405d6ed06e9e",
+      "source_url": "https://mempool.space/api/tx/48388dd0482ae39ef56d8cd39374f7aa1a33fc347ce4ddbc66564379a6a628ea",
+      "retrieved_at": "2026-10-26T21:41:28.713087+00:00",
+      "sha256": "1bae23e25cd5284a16b2343ffa73090206ad425a23809f64c7855bdeb70e6851",
+      "license": "Public blockchain facts; explorer terms apply",
+      "evidence_kind": "public_recording",
+      "size_bytes": 31856,
+      "status": 200,
+      "local_cache": "data/follow_the_money/replay-public/73463eaa7afa8013928e6a265586cbafef3e26fe4dd11e87974b405d6ed06e9e.json"
+    },
+    {
+      "id": "esplora-7eeca37c5858bb34273bf69b4b126bda85a8c8b07abf25a25e2d22d2e0d1f2e7",
+      "source_url": "https://mempool.space/api/tx/c903bb557e868f2a484e7a49b3ce40978ab7eb9ea326ce165f98ade70e01c3bb/outspends",
+      "retrieved_at": "2026-10-26T21:41:34.281243+00:00",
+      "sha256": "ddbf3fe5d14a7418f781fca946bd2586be3739089282c3881f30b33bd3d0d80c",
+      "license": "Public blockchain facts; explorer terms apply",
+      "evidence_kind": "public_recording",
+      "size_bytes": 504,
+      "status": 200,
+      "local_cache": "data/follow_the_money/replay-public/7eeca37c5858bb34273bf69b4b126bda85a8c8b07abf25a25e2d22d2e0d1f2e7.json"
+    },
+    {
+      "id": "esplora-baab269a9b599cec440f0b1585ac276dafe0a98ef2e529a8d25be6024385f920",
+      "source_url": "https://mempool.space/api/tx/48388dd0482ae39ef56d8cd39374f7aa1a33fc347ce4ddbc66564379a6a628ea/outspends",
+      "retrieved_at": "2026-10-26T21:41:30.853163+00:00",
+      "sha256": "cd1bc8b813eb25486b271bb9625df1f085b66744d59105aec5944db8220b3642",
+      "license": "Public blockchain facts; explorer terms apply",
+      "evidence_kind": "public_recording",
+      "size_bytes": 7815,
+      "status": 200,
+      "local_cache": "data/follow_the_money/replay-public/baab269a9b599cec440f0b1585ac276dafe0a98ef2e529a8d25be6024385f920.json"
+    },
+    {
+      "id": "graphsense-binance",
+      "source_url": "https://raw.githubusercontent.com/graphsense/graphsense-tagpacks/dda9b42b511a090d843a1695015a49987ae955bd/packs/binance.yaml",
+      "license": "MIT (GraphSense repository); upstream attribution retained",
+      "retrieved_at": "2026-10-26T20:19:13.763196+00:00",
+      "size_bytes": 495,
+      "sha256": "446a85840b4318d27ec8a3ab74a3fa2779ddd87907ddc0ceff428d6ff18bedd7",
+      "revision": "dda9b42b511a090d843a1695015a49987ae955bd",
+      "evidence_kind": "public_dataset",
+      "download_operations_this_run": 1,
+      "request_count_note": "One acquisition invocation; HTTP redirects were not separately counted. Bitcoin recording counts physical attempts separately."
+    },
+    {
+      "id": "graphsense-license",
+      "source_url": "https://raw.githubusercontent.com/graphsense/graphsense-tagpacks/dda9b42b511a090d843a1695015a49987ae955bd/LICENSE",
+      "license": "MIT",
+      "retrieved_at": "2026-10-26T20:19:14.592548+00:00",
+      "size_bytes": 1151,
+      "sha256": "2c9bb5e1d50203d505b997babbb23eebda868f1280dc5ef5854263ba0dd7c4ed",
+      "revision": "dda9b42b511a090d843a1695015a49987ae955bd",
+      "evidence_kind": "public_dataset",
+      "download_operations_this_run": 1,
+      "request_count_note": "One acquisition invocation; HTTP redirects were not separately counted. Bitcoin recording counts physical attempts separately."
+    },
+    {
+      "id": "ofac-btc",
+      "source_url": "https://raw.githubusercontent.com/0xB10C/ofac-sanctioned-digital-currency-addresses/6ae2472c439b9bb2788f8df662052ae31854aa97/sanctioned_addresses_XBT.json",
+      "license": "Public US Treasury factual list; extractor MIT; no completeness warranty",
+      "retrieved_at": "2026-10-26T20:19:15.329027+00:00",
+      "size_bytes": 22645,
+      "sha256": "d4299f5afe07a10363b50a675329d390a1cc4b185de40ecb4a2fc2051a6e50bc",
+      "revision": "6ae2472c439b9bb2788f8df662052ae31854aa97",
+      "evidence_kind": "public_dataset",
+      "download_operations_this_run": 1,
+      "request_count_note": "One acquisition invocation; HTTP redirects were not separately counted. Bitcoin recording counts physical attempts separately."
+    },
+    {
+      "id": "ofac-tron",
+      "source_url": "https://raw.githubusercontent.com/0xB10C/ofac-sanctioned-digital-currency-addresses/6ae2472c439b9bb2788f8df662052ae31854aa97/sanctioned_addresses_TRX.json",
+      "license": "Public US Treasury factual list; extractor MIT; no completeness warranty",
+      "retrieved_at": "2026-10-26T20:19:16.085383+00:00",
+      "size_bytes": 10443,
+      "sha256": "7590048dac7db53817eebcb1c901167fd979e17d4ba805c7009e585fa7ebd0fe",
+      "revision": "6ae2472c439b9bb2788f8df662052ae31854aa97",
+      "evidence_kind": "public_dataset",
+      "download_operations_this_run": 1,
+      "request_count_note": "One acquisition invocation; HTTP redirects were not separately counted. Bitcoin recording counts physical attempts separately."
+    },
+    {
+      "id": "ransomwhere-1_1_0",
+      "source_url": "https://zenodo.org/api/records/13999026/files/ransomwhere.json/content",
+      "license": "CC-BY-4.0",
+      "retrieved_at": "2026-10-26T20:19:13.000490+00:00",
+      "size_bytes": 5572091,
+      "sha256": "5c939f3f0d390813f78e649cdd5cd50dcac6ac286e8c9ba52206b273f761082d",
+      "revision": "1.1.0",
+      "evidence_kind": "public_dataset",
+      "download_operations_this_run": 1,
+      "request_count_note": "One acquisition invocation; HTTP redirects were not separately counted. Bitcoin recording counts physical attempts separately."
+    },
+    {
+      "source_url": "https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz",
+      "license": "GPL-2.0-only",
+      "retrieved_at": "2026-10-26T19:50:59.066324+00:00",
+      "size_bytes": 7771796,
+      "sha256": "618190cf590b7e9f6c11f91f23b1d267cd98c3ab33b850416d8758f8b5a85628",
+      "id": "toolchain-git-2_49_0",
+      "evidence_kind": "toolchain"
+    },
+    {
+      "name": "zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.3_amd64.deb",
+      "source_url": "http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib1g-dev_1.3.dfsg-3.1ubuntu2.3_amd64.deb",
+      "license": "Zlib",
+      "retrieved_at": "2026-10-26T19:50:00+00:00",
+      "size_bytes": 894134,
+      "sha256": "419902a649e1078f24596cdf31ced9c839519828790f59888056fcdcd58e8a28",
+      "retrieval_time_precision": "minute (observed download session; not server Last-Modified)",
+      "id": "toolchain-zlib-dev",
+      "evidence_kind": "toolchain"
+    },
+    {
+      "id": "declarative-agent-1.9",
+      "source_url": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.9/schema.json",
+      "license": "Microsoft published schema; local validation only",
+      "retrieved_at": "2026-10-26T22:12:04.355356+00:00",
+      "size_bytes": 55802,
+      "sha256": "102abde77894ed0d30c5e097a1b17181a16527865fdcd2f824e2578799abd3a5",
+      "evidence_kind": "development_tool_or_schema"
+    },
+    {
+      "id": "api-plugin-2.4",
+      "source_url": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+      "license": "Microsoft published schema; local validation only",
+      "retrieved_at": "2026-10-26T22:12:05.335271+00:00",
+      "size_bytes": 39966,
+      "sha256": "ea3016aa4917e1b714454a6a7be9444f8aa7a1923cba0a42343a6fd234a0eb00",
+      "evidence_kind": "development_tool_or_schema"
+    },
+    {
+      "id": "agents-playground-0.2.29",
+      "source_url": "https://registry.npmjs.org/@microsoft/m365agentsplayground/-/m365agentsplayground-0.2.29.tgz",
+      "license": "Microsoft pre-release software evaluation licence, installation/use for evaluation; not redistributed",
+      "retrieved_at": "2026-10-26T22:12:08.496201+00:00",
+      "size_bytes": 5039076,
+      "sha256": "eda2faf616b407c72a9650b7b2d5d1de3f3ce0f976001157fd4e550d4178f427",
+      "evidence_kind": "development_tool_or_schema"
+    }
+  ],
+  "blocked": [
+    {
+      "id": "elliptic2",
+      "reason": "Public Kaggle metadata reports 25,805,701,153 bytes (> 2 GB owner limit); no download attempted.",
+      "owner": "dataset/compute owner",
+      "next_action": "Provide a permitted local subset below the limit; no Kaggle login will be used."
+    },
+    {
+      "id": "elliptic-plus-plus",
+      "reason": "Public Drive and Git LFS pointers found, but no dataset licence found in repository or folder listing. Dataset acquisition is held pending licence verification.",
+      "owner": "dataset owner",
+      "next_action": "Supply a documented licence granting the intended research use; synthetic pipeline will be implemented."
+    },
+    {
+      "id": "trongrid-live",
+      "reason": "No API key; live TRON is not authorized.",
+      "owner": "owner",
+      "next_action": "Provide explicit approval and a key outside repository for a future bounded recording; fixtures work offline."
+    },
+    {
+      "id": "opensanctions-live",
+      "reason": "Bulk licence/use permission is not established by the authorized source list.",
+      "owner": "owner/data steward",
+      "next_action": "Verify current dataset terms and approve a scoped research snapshot; adapter tests use fiction."
+    }
+  ],
+  "recording_runs": [
+    {
+      "at": "2026-10-26T20:19:59.839049+00:00",
+      "max_calls": 30,
+      "max_network_calls": 4,
+      "calls": 2,
+      "network_calls": 2,
+      "errors": [],
+      "events": [
+        {
+          "url": "https://mempool.space/api/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+          "cache_hit": false,
+          "status": 200,
+          "attempt": 1,
+          "sha256": "1375bd578e9801dab814630bcc01952eff902f3cd6e4981561cac5e5e406a4b3"
+        },
+        {
+          "url": "https://mempool.space/api/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b/outspends",
+          "cache_hit": false,
+          "status": 200,
+          "attempt": 1,
+          "sha256": "e062e2a6db656cc08172a504cee85612101aca6b18fbfcf9efc735aaa237bd6a"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T21:41:34.491949+00:00",
+      "max_calls": 30,
+      "max_network_calls": 6,
+      "calls": 4,
+      "network_calls": 4,
+      "errors": [],
+      "events": [
+        {
+          "url": "https://mempool.space/api/tx/48388dd0482ae39ef56d8cd39374f7aa1a33fc347ce4ddbc66564379a6a628ea",
+          "cache_hit": false,
+          "status": 200,
+          "attempt": 1,
+          "sha256": "1bae23e25cd5284a16b2343ffa73090206ad425a23809f64c7855bdeb70e6851"
+        },
+        {
+          "url": "https://mempool.space/api/tx/48388dd0482ae39ef56d8cd39374f7aa1a33fc347ce4ddbc66564379a6a628ea/outspends",
+          "cache_hit": false,
+          "status": 200,
+          "attempt": 1,
+          "sha256": "cd1bc8b813eb25486b271bb9625df1f085b66744d59105aec5944db8220b3642"
+        },
+        {
+          "url": "https://mempool.space/api/tx/c903bb557e868f2a484e7a49b3ce40978ab7eb9ea326ce165f98ade70e01c3bb",
+          "cache_hit": false,
+          "status": 200,
+          "attempt": 1,
+          "sha256": "b67bab87bc1895566e49c02a18df2bcc48d5f88dcfc8a87c134135551b113d89"
+        },
+        {
+          "url": "https://mempool.space/api/tx/c903bb557e868f2a484e7a49b3ce40978ab7eb9ea326ce165f98ade70e01c3bb/outspends",
+          "cache_hit": false,
+          "status": 200,
+          "attempt": 1,
+          "sha256": "ddbf3fe5d14a7418f781fca946bd2586be3739089282c3881f30b33bd3d0d80c"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T21:44:43.362526+00:00",
+      "max_calls": 30,
+      "max_network_calls": 2,
+      "calls": 3,
+      "network_calls": 1,
+      "errors": [],
+      "events": [
+        {
+          "url": "https://mempool.space/api/tx/c903bb557e868f2a484e7a49b3ce40978ab7eb9ea326ce165f98ade70e01c3bb",
+          "cache_hit": true,
+          "status": 200
+        },
+        {
+          "url": "https://mempool.space/api/tx/c903bb557e868f2a484e7a49b3ce40978ab7eb9ea326ce165f98ade70e01c3bb/outspends",
+          "cache_hit": true,
+          "status": 200
+        },
+        {
+          "url": "https://mempool.space/api/address/1KmgC5oPi652sgHz5MByq9Au1pnKwtPj9D/txs",
+          "cache_hit": false,
+          "status": 200,
+          "attempt": 1,
+          "sha256": "a1815c75d7329cd7ccbd310b3ca95161bbdd8003d9f90d975e390304947f04da"
+        }
+      ]
+    }
+  ]
+}

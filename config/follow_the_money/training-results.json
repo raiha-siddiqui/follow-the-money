@@ -1,0 +1,470 @@
+{
+  "schema": "ftm-training-v1",
+  "evidence_kind": "synthetic",
+  "runs": [
+    {
+      "model": "sage",
+      "features": "full",
+      "columns": [
+        "log_out_count",
+        "log_in_count",
+        "log_out_units",
+        "log_counterparties",
+        "log_age_days",
+        "synthetic_privileged_signal"
+      ],
+      "seed": 47,
+      "best_epoch": 26,
+      "train_end": 18,
+      "validation_end": 24,
+      "counts": {
+        "train": 360,
+        "validation": 120,
+        "test": 120
+      },
+      "validation": {
+        "average_precision": 0.9609743641740324,
+        "roc_auc": 0.9576719576719577,
+        "brier": 0.081497922539711,
+        "accuracy": 0.875
+      },
+      "test": {
+        "average_precision": 0.9462930083511367,
+        "roc_auc": 0.9460511679644048,
+        "brier": 0.08512513339519501,
+        "accuracy": 0.8916666666666667
+      },
+      "fit_seconds": 0.563309567000033,
+      "provenance": {
+        "evidence_kind": "synthetic",
+        "generator": "ftm-temporal-v1",
+        "seed": 47,
+        "license": "CC0-1.0",
+        "chain": "synthetic",
+        "target": "constructed_endpoint_priority",
+        "sha256": "6d9ce698b9dd19526d1766b608aadc367fa812dd8d339bc58cb9e968750dae11"
+      },
+      "scaler": {
+        "mean": [
+          0.044853221625089645,
+          0.013702967204153538,
+          -0.05760379880666733,
+          -0.06114713475108147,
+          0.00786169059574604,
+          0.04866095259785652
+        ],
+        "scale": [
+          0.9560733437538147,
+          1.0032854080200195,
+          0.9402915239334106,
+          0.9883092641830444,
+          1.043461799621582,
+          0.9369974732398987
+        ]
+      },
+      "ood_threshold": 2.11773681640625,
+      "calibrated": false
+    },
+    {
+      "model": "sage",
+      "features": "live",
+      "columns": [
+        "log_out_count",
+        "log_in_count",
+        "log_out_units",
+        "log_counterparties",
+        "log_age_days"
+      ],
+      "seed": 47,
+      "best_epoch": 31,
+      "train_end": 18,
+      "validation_end": 24,
+      "counts": {
+        "train": 360,
+        "validation": 120,
+        "test": 120
+      },
+      "validation": {
+        "average_precision": 0.6640366730689787,
+        "roc_auc": 0.6585909217488164,
+        "brier": 0.23831255733966827,
+        "accuracy": 0.5916666666666667
+      },
+      "test": {
+        "average_precision": 0.6990592119301275,
+        "roc_auc": 0.7002224694104561,
+        "brier": 0.22302527725696564,
+        "accuracy": 0.625
+      },
+      "fit_seconds": 0.41558302500016,
+      "provenance": {
+        "evidence_kind": "synthetic",
+        "generator": "ftm-temporal-v1",
+        "seed": 47,
+        "license": "CC0-1.0",
+        "chain": "synthetic",
+        "target": "constructed_endpoint_priority",
+        "sha256": "6d9ce698b9dd19526d1766b608aadc367fa812dd8d339bc58cb9e968750dae11"
+      },
+      "scaler": {
+        "mean": [
+          0.044853221625089645,
+          0.013702967204153538,
+          -0.05760379880666733,
+          -0.06114713475108147,
+          0.00786169059574604
+        ],
+        "scale": [
+          0.9560733437538147,
+          1.0032854080200195,
+          0.9402915239334106,
+          0.9883092641830444,
+          1.043461799621582
+        ]
+      },
+      "ood_threshold": 2.139401435852051,
+      "calibrated": false
+    },
+    {
+      "model": "gat",
+      "features": "full",
+      "columns": [
+        "log_out_count",
+        "log_in_count",
+        "log_out_units",
+        "log_counterparties",
+        "log_age_days",
+        "synthetic_privileged_signal"
+      ],
+      "seed": 47,
+      "best_epoch": 3,
+      "train_end": 18,
+      "validation_end": 24,
+      "counts": {
+        "train": 360,
+        "validation": 120,
+        "test": 120
+      },
+      "validation": {
+        "average_precision": 0.6318169204997103,
+        "roc_auc": 0.6299081035923142,
+        "brier": 0.2393975555896759,
+        "accuracy": 0.5833333333333334
+      },
+      "test": {
+        "average_precision": 0.5723246747535761,
+        "roc_auc": 0.5481090100111236,
+        "brier": 0.24833984673023224,
+        "accuracy": 0.5166666666666667
+      },
+      "fit_seconds": 1.4040722659992753,
+      "provenance": {
+        "evidence_kind": "synthetic",
+        "generator": "ftm-temporal-v1",
+        "seed": 47,
+        "license": "CC0-1.0",
+        "chain": "synthetic",
+        "target": "constructed_endpoint_priority",
+        "sha256": "6d9ce698b9dd19526d1766b608aadc367fa812dd8d339bc58cb9e968750dae11"
+      },
+      "scaler": {
+        "mean": [
+          0.044853221625089645,
+          0.013702967204153538,
+          -0.05760379880666733,
+          -0.06114713475108147,
+          0.00786169059574604,
+          0.04866095259785652
+        ],
+        "scale": [
+          0.9560733437538147,
+          1.0032854080200195,
+          0.9402915239334106,
+          0.9883092641830444,
+          1.043461799621582,
+          0.9369974732398987
+        ]
+      },
+      "ood_threshold": 2.11773681640625,
+      "calibrated": false
+    },
+    {
+      "model": "gat",
+      "features": "live",
+      "columns": [
+        "log_out_count",
+        "log_in_count",
+        "log_out_units",
+        "log_counterparties",
+        "log_age_days"
+      ],
+      "seed": 47,
+      "best_epoch": 4,
+      "train_end": 18,
+      "validation_end": 24,
+      "counts": {
+        "train": 360,
+        "validation": 120,
+        "test": 120
+      },
+      "validation": {
+        "average_precision": 0.5667607025541226,
+        "roc_auc": 0.5087719298245614,
+        "brier": 0.2516217827796936,
+        "accuracy": 0.5333333333333333
+      },
+      "test": {
+        "average_precision": 0.5629237628015598,
+        "roc_auc": 0.5319799777530589,
+        "brier": 0.2526170313358307,
+        "accuracy": 0.5583333333333333
+      },
+      "fit_seconds": 0.8991519209994294,
+      "provenance": {
+        "evidence_kind": "synthetic",
+        "generator": "ftm-temporal-v1",
+        "seed": 47,
+        "license": "CC0-1.0",
+        "chain": "synthetic",
+        "target": "constructed_endpoint_priority",
+        "sha256": "6d9ce698b9dd19526d1766b608aadc367fa812dd8d339bc58cb9e968750dae11"
+      },
+      "scaler": {
+        "mean": [
+          0.044853221625089645,
+          0.013702967204153538,
+          -0.05760379880666733,
+          -0.06114713475108147,
+          0.00786169059574604
+        ],
+        "scale": [
+          0.9560733437538147,
+          1.0032854080200195,
+          0.9402915239334106,
+          0.9883092641830444,
+          1.043461799621582
+        ]
+      },
+      "ood_threshold": 2.139401435852051,
+      "calibrated": false
+    },
+    {
+      "model": "xgboost",
+      "features": "full",
+      "columns": [
+        "log_out_count",
+        "log_in_count",
+        "log_out_units",
+        "log_counterparties",
+        "log_age_days",
+        "synthetic_privileged_signal"
+      ],
+      "seed": 47,
+      "best_epoch": null,
+      "train_end": 18,
+      "validation_end": 24,
+      "counts": {
+        "train": 360,
+        "validation": 120,
+        "test": 120
+      },
+      "validation": {
+        "average_precision": 0.938247810863843,
+        "roc_auc": 0.9404065719855194,
+        "brier": 0.10241404175758362,
+        "accuracy": 0.8333333333333334
+      },
+      "test": {
+        "average_precision": 0.9309487855361934,
+        "roc_auc": 0.9439655172413792,
+        "brier": 0.09151174128055573,
+        "accuracy": 0.8666666666666667
+      },
+      "fit_seconds": 0.12037839200093003,
+      "provenance": {
+        "evidence_kind": "synthetic",
+        "generator": "ftm-temporal-v1",
+        "seed": 47,
+        "license": "CC0-1.0",
+        "chain": "synthetic",
+        "target": "constructed_endpoint_priority",
+        "sha256": "6d9ce698b9dd19526d1766b608aadc367fa812dd8d339bc58cb9e968750dae11"
+      },
+      "scaler": {
+        "mean": [
+          0.044853221625089645,
+          0.013702967204153538,
+          -0.05760379880666733,
+          -0.06114713475108147,
+          0.00786169059574604,
+          0.04866095259785652
+        ],
+        "scale": [
+          0.9560733437538147,
+          1.0032854080200195,
+          0.9402915239334106,
+          0.9883092641830444,
+          1.043461799621582,
+          0.9369974732398987
+        ]
+      },
+      "ood_threshold": 2.11773681640625,
+      "calibrated": false
+    },
+    {
+      "model": "xgboost",
+      "features": "live",
+      "columns": [
+        "log_out_count",
+        "log_in_count",
+        "log_out_units",
+        "log_counterparties",
+        "log_age_days"
+      ],
+      "seed": 47,
+      "best_epoch": null,
+      "train_end": 18,
+      "validation_end": 24,
+      "counts": {
+        "train": 360,
+        "validation": 120,
+        "test": 120
+      },
+      "validation": {
+        "average_precision": 0.6351308889388796,
+        "roc_auc": 0.6067947646895016,
+        "brier": 0.2505422532558441,
+        "accuracy": 0.5083333333333333
+      },
+      "test": {
+        "average_precision": 0.7118727901219482,
+        "roc_auc": 0.7124582869855395,
+        "brier": 0.21620498597621918,
+        "accuracy": 0.6416666666666667
+      },
+      "fit_seconds": 0.08508475100097712,
+      "provenance": {
+        "evidence_kind": "synthetic",
+        "generator": "ftm-temporal-v1",
+        "seed": 47,
+        "license": "CC0-1.0",
+        "chain": "synthetic",
+        "target": "constructed_endpoint_priority",
+        "sha256": "6d9ce698b9dd19526d1766b608aadc367fa812dd8d339bc58cb9e968750dae11"
+      },
+      "scaler": {
+        "mean": [
+          0.044853221625089645,
+          0.013702967204153538,
+          -0.05760379880666733,
+          -0.06114713475108147,
+          0.00786169059574604
+        ],
+        "scale": [
+          0.9560733437538147,
+          1.0032854080200195,
+          0.9402915239334106,
+          0.9883092641830444,
+          1.043461799621582
+        ]
+      },
+      "ood_threshold": 2.139401435852051,
+      "calibrated": false
+    }
+  ],
+  "full_minus_live_test_ap": {
+    "sage": 0.24723379642100918,
+    "gat": 0.009400911952016311,
+    "xgboost": 0.21907599541424527
+  },
+  "change_classifier": {
+    "evidence_kind": "synthetic",
+    "train_count": 118,
+    "test_count": 42,
+    "test": {
+      "average_precision": 0.8281470203125101,
+      "roc_auc": 0.7868480725623582,
+      "brier": 0.18110125727325666,
+      "accuracy": 0.7619047619047619
+    },
+    "label_kind": "weak_cospend",
+    "calibrated": false,
+    "limitation": "Paired negatives and common-input ownership are assumptions.",
+    "coefficients": [
+      [
+        0.7784782895075116,
+        0.9563701545527165,
+        -0.13777640934434812,
+        1.631438795725017
+      ]
+    ],
+    "intercept": [
+      -1.0046335185147945
+    ]
+  },
+  "notice": "Single seed (47), no confidence intervals. GAT is near the test positive base rate (0.5167); its full-to-live drop is not meaningful evidence of robustness. Change signals vary and weak paired negatives remain assumptions. Pipeline verification only. Synthetic metrics do not estimate real-world tracing or illicit-address performance.",
+  "elliptic_plus_plus": "BLOCKED: dataset licence not verified",
+  "elliptic2": "BLOCKED: 25,805,701,153 bytes exceeds limit",
+  "artifacts": [
+    {
+      "path": "gat-full.metadata.json",
+      "bytes": 1460,
+      "sha256": "c316e0c40d40c8752b8182faff8196508e537a447af9211cda1c293650b020a4"
+    },
+    {
+      "path": "gat-full.pt",
+      "bytes": 4315,
+      "sha256": "8d1e2647007341563d5a2763b434f1f868cf4895c0ecde622654cbadb5070e8c"
+    },
+    {
+      "path": "gat-live.metadata.json",
+      "bytes": 1372,
+      "sha256": "86a2ea6afe5c0f2a9a7e58e26ec6490745058b31a579e67b8f7df54038b5d221"
+    },
+    {
+      "path": "gat-live.pt",
+      "bytes": 4251,
+      "sha256": "48ad387e2214cbdc2473a9585963d806f66faf6c025e88138c5f46b9fa3bf23e"
+    },
+    {
+      "path": "sage-full.metadata.json",
+      "bytes": 1447,
+      "sha256": "12836328850e0bad9dade0ab973b721777741c9a1d7d20bf276f82a5ff2757d4"
+    },
+    {
+      "path": "sage-full.pt",
+      "bytes": 4205,
+      "sha256": "31afce31ae1be55385ae383990ee790d384b748acb7234a075a23614ffbfde35"
+    },
+    {
+      "path": "sage-live.metadata.json",
+      "bytes": 1361,
+      "sha256": "a975bd8c3313fcb0af5a599262b73a8fb821939593134093dad80319a721e393"
+    },
+    {
+      "path": "sage-live.pt",
+      "bytes": 4077,
+      "sha256": "f1c277935e380cac4a629b19bf0ebfeebdb39fd683429e92e555ffbc4817f06d"
+    },
+    {
+      "path": "xgboost-full.json",
+      "bytes": 66356,
+      "sha256": "a3f69cfb05e0a88b1d892b1a295122aff75a7f4751f8f221b842d37cd381f9df"
+    },
+    {
+      "path": "xgboost-full.metadata.json",
+      "bytes": 1468,
+      "sha256": "8ef537eafc3af1ad878c20daba2374f25cf58b3598677ee6bb9f91b7679dd882"
+    },
+    {
+      "path": "xgboost-live.json",
+      "bytes": 67457,
+      "sha256": "115ce461529f1edd1eadf363357481cd63ae2c55ad576d8d48b3db23d5ef9635"
+    },
+    {
+      "path": "xgboost-live.metadata.json",
+      "bytes": 1381,
+      "sha256": "a6a8280b95764b1bf5abd066d61d72157ac9b70b233fb5ec81cf67863032e9d0"
+    }
+  ]
+}

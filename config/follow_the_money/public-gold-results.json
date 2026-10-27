@@ -1,0 +1,107 @@
+{
+  "schema": "ftm-public-gold-v1",
+  "evidence_kind": "public_recording",
+  "annotation_id": "doj-2025-exchange-deposit",
+  "citation": "Case 1:25-cv-10413, Document 1-1, affidavit page 13, paragraphs 35\u201338, Figures 1\u20132 (PDF page 16).",
+  "source_url": "https://www.justice.gov/usao-ma/media/1390101/dl?inline=",
+  "source_sha256": "53ae96300ca66650efac81fb629d080f17d73300e8c77a26629d757ef917bf5f",
+  "validation": {
+    "verified": true,
+    "funding_txid": "48388dd0482ae39ef56d8cd39374f7aa1a33fc347ce4ddbc66564379a6a628ea",
+    "funding_vout": 29,
+    "spend_txid": "c903bb557e868f2a484e7a49b3ce40978ab7eb9ea326ce165f98ade70e01c3bb",
+    "endpoint_units": 124016260,
+    "ownership_verified": false,
+    "source_response_hashes": [
+      "1bae23e25cd5284a16b2343ffa73090206ad425a23809f64c7855bdeb70e6851",
+      "b67bab87bc1895566e49c02a18df2bcc48d5f88dcfc8a87c134135551b113d89",
+      "cd1bc8b813eb25486b271bb9625df1f085b66744d59105aec5944db8220b3642"
+    ]
+  },
+  "validation_calls_separate_from_tracing": {
+    "max_calls": 3,
+    "max_network_calls": 0,
+    "calls": 3,
+    "network_calls": 0
+  },
+  "runs": [
+    {
+      "strategy": "bfs",
+      "repeat": 0,
+      "success": true,
+      "calls_to_endpoint": 1,
+      "calls": 1,
+      "network_calls": 0,
+      "latency_seconds": 0.8130265500003588,
+      "case_status": "awaiting_approval",
+      "critic_claims": 4,
+      "withdrawn_claims": 1
+    },
+    {
+      "strategy": "bfs",
+      "repeat": 1,
+      "success": true,
+      "calls_to_endpoint": 1,
+      "calls": 1,
+      "network_calls": 0,
+      "latency_seconds": 0.9509079999988899,
+      "case_status": "awaiting_approval",
+      "critic_claims": 4,
+      "withdrawn_claims": 1
+    },
+    {
+      "strategy": "bfs",
+      "repeat": 2,
+      "success": true,
+      "calls_to_endpoint": 1,
+      "calls": 1,
+      "network_calls": 0,
+      "latency_seconds": 0.9578899749994889,
+      "case_status": "awaiting_approval",
+      "critic_claims": 4,
+      "withdrawn_claims": 1
+    },
+    {
+      "strategy": "priority",
+      "repeat": 0,
+      "success": true,
+      "calls_to_endpoint": 1,
+      "calls": 1,
+      "network_calls": 0,
+      "latency_seconds": 1.6091051240000525,
+      "case_status": "awaiting_approval",
+      "critic_claims": 4,
+      "withdrawn_claims": 1
+    },
+    {
+      "strategy": "priority",
+      "repeat": 1,
+      "success": true,
+      "calls_to_endpoint": 1,
+      "calls": 1,
+      "network_calls": 0,
+      "latency_seconds": 0.8110390559995722,
+      "case_status": "awaiting_approval",
+      "critic_claims": 4,
+      "withdrawn_claims": 1
+    },
+    {
+      "strategy": "priority",
+      "repeat": 2,
+      "success": true,
+      "calls_to_endpoint": 1,
+      "calls": 1,
+      "network_calls": 0,
+      "latency_seconds": 0.7239896219998627,
+      "case_status": "awaiting_approval",
+      "critic_claims": 4,
+      "withdrawn_claims": 1
+    }
+  ],
+  "k": 3,
+  "pass_k": {
+    "bfs": true,
+    "priority": true
+  },
+  "notice": "Deterministic replay makes pass^k equal pass^1. One publicly documented hop with a supplied historical service label. Priority uses its heuristic/OOD fallback; no synthetic model is applied to real addresses. No human approval or account ownership is claimed."
+}

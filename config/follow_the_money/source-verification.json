@@ -1,0 +1,270 @@
+{
+  "schema": "ftm-source-verification-v2",
+  "base_commit": "d91e372",
+  "initial_project2_commit": "d440a0e",
+  "phase": "independent adversarial review fixes",
+  "file_count": 52,
+  "files": [
+    {
+      "path": "scripts/ftm_m365.py",
+      "bytes": 7798,
+      "sha256": "29b08cad3e3c403bffc87096ab05ab0ead897694d66171e17e7837bf56ec53a5"
+    },
+    {
+      "path": "scripts/ftm_record.py",
+      "bytes": 3216,
+      "sha256": "3b62fb9b02dce638f325755dc20c95b6f30ed9de9364fd2a3b3d09479a44f5a7"
+    },
+    {
+      "path": "src/follow_the_money/__init__.py",
+      "bytes": 94,
+      "sha256": "5fc16a7e6c1813a67da3aa088789b7533fce29d71015df37079beb839f34fd29"
+    },
+    {
+      "path": "src/follow_the_money/__main__.py",
+      "bytes": 6810,
+      "sha256": "8929db2d0a2c92b2c9921dd319cdcd172b2a84203d4d9fbe6c0756f2414a55b0"
+    },
+    {
+      "path": "src/follow_the_money/acquire.py",
+      "bytes": 6327,
+      "sha256": "a46434f1b6c848f3c615e2e141261884a64c4302a720ad1011eb5a8eb41cec7c"
+    },
+    {
+      "path": "src/follow_the_money/agent.py",
+      "bytes": 31650,
+      "sha256": "03f4c47f6a7eeeb198196d782f8473fc0e58715843b6a35234a8842141843c94"
+    },
+    {
+      "path": "src/follow_the_money/api.py",
+      "bytes": 7460,
+      "sha256": "339ed74b6ab56e355cdb71ed4cf9d826e8977dc806e100ebcbd3705db4c0c068"
+    },
+    {
+      "path": "src/follow_the_money/auth.py",
+      "bytes": 3118,
+      "sha256": "1ff668bc8ee2764463251c8a5ed5a0ab2ae5015f54cd9f183664f0e816e6860b"
+    },
+    {
+      "path": "src/follow_the_money/cases.py",
+      "bytes": 4440,
+      "sha256": "b247b4ea0bd43c1c0ba8ee56ce8fd2e7a74de645cf1d29ba0dc3ce375a6334f8"
+    },
+    {
+      "path": "src/follow_the_money/clients.py",
+      "bytes": 17006,
+      "sha256": "466154ba7563ac82f65930d623c1d9e2ad26c8ca190aaf25553df5f7568e3b7e"
+    },
+    {
+      "path": "src/follow_the_money/contracts.py",
+      "bytes": 5301,
+      "sha256": "53c0dfb6aecf8ad5369b36e5ead290389254c42c33326dc8b6b41184a3f607b8"
+    },
+    {
+      "path": "src/follow_the_money/critic.py",
+      "bytes": 9263,
+      "sha256": "831d6cb11876999d61ba1157a6c1d5db51f45eae6c64d427b4ae851bce30f25d"
+    },
+    {
+      "path": "src/follow_the_money/datasets.py",
+      "bytes": 9167,
+      "sha256": "1e83a38013fdf3bf3905afcb9a8f15386e5b9de0d8bb826b09becf5bb650184d"
+    },
+    {
+      "path": "src/follow_the_money/evaluation.py",
+      "bytes": 22944,
+      "sha256": "e8a1ad8183f26b1b63be439aaef354cc50b0052a0a1f7dab756bcdfc9bb408df"
+    },
+    {
+      "path": "src/follow_the_money/features.py",
+      "bytes": 3103,
+      "sha256": "54b2166820dea53bfbdd13e96d1c33ba568672e87d36f4e6a282faabf13a7799"
+    },
+    {
+      "path": "src/follow_the_money/fixtures.py",
+      "bytes": 9023,
+      "sha256": "b2980751f3550c6595d1b8e673738deccc7ef66b7fa6e6a270b8a74c686cd9be"
+    },
+    {
+      "path": "src/follow_the_money/gold.py",
+      "bytes": 7021,
+      "sha256": "8c82acbe8e14480b83d139296fd74f4207665419437376f2eeadf0630a8340eb"
+    },
+    {
+      "path": "src/follow_the_money/heuristics.py",
+      "bytes": 15562,
+      "sha256": "83d47b4c6bd295ffae8e8d039b922ddb8751d4e5ce1b46d0258d9555efae39ed"
+    },
+    {
+      "path": "src/follow_the_money/labels.py",
+      "bytes": 5084,
+      "sha256": "940b97854809a5821dadfddbfdec8c4a6dec4eeb42f63e9f5d8bf2255c459627"
+    },
+    {
+      "path": "src/follow_the_money/m365.py",
+      "bytes": 13095,
+      "sha256": "56e0a7c8eb55b22e60b8a61bed1a20c04fb5471af595e92999e66c594cff73c4"
+    },
+    {
+      "path": "src/follow_the_money/mcp_server.py",
+      "bytes": 6011,
+      "sha256": "2d925032ed86f472d2652c528c4103c0874e26f5cbff2f726bde43acaab03cfc"
+    },
+    {
+      "path": "src/follow_the_money/memory.py",
+      "bytes": 13849,
+      "sha256": "cdffa288520ec8ec01f71765b3ea20bee5f8ffb915ac57cf575429f26773e69b"
+    },
+    {
+      "path": "src/follow_the_money/models.py",
+      "bytes": 2137,
+      "sha256": "ac1035166e0799e2d27d67aed8fae92ff352f9043fd61981a5ca332aa6e34b8b"
+    },
+    {
+      "path": "src/follow_the_money/p1_interfaces.py",
+      "bytes": 602,
+      "sha256": "ec33b59a8a6969d42f936c4a5fb14f86b5993c78de576458ad29b9c18b1ade26"
+    },
+    {
+      "path": "src/follow_the_money/planner.py",
+      "bytes": 743,
+      "sha256": "e3a18d40f56047a5ae737961112094c3822ef3dd09f0acabb46dced14b274f19"
+    },
+    {
+      "path": "src/follow_the_money/resolver.py",
+      "bytes": 1921,
+      "sha256": "74526793eafb9dff12f12584cd5ca4c26e0241a0acd9f2ff14d731f1918da05a"
+    },
+    {
+      "path": "src/follow_the_money/scoring.py",
+      "bytes": 3301,
+      "sha256": "a4b3b180693176cbe0505ee2f6cda2cd0a0c05c54502f0c4a677e31c0399fc4a"
+    },
+    {
+      "path": "src/follow_the_money/security.py",
+      "bytes": 4244,
+      "sha256": "6cb1db5130d8a48bdb8381621b014ebac75f8232dfba16b5167336cbf490674e"
+    },
+    {
+      "path": "src/follow_the_money/seeds.py",
+      "bytes": 1109,
+      "sha256": "04af26a1aa3a842af1066765c71419cdacd286f8440f72056431c6a4ba92cf0b"
+    },
+    {
+      "path": "src/follow_the_money/service.py",
+      "bytes": 15289,
+      "sha256": "8f0f53db103ac4ed31aad03b940a241d71cf75b4329caf828c44bad192bb26d1"
+    },
+    {
+      "path": "src/follow_the_money/storage.py",
+      "bytes": 12401,
+      "sha256": "1b9fff5e7a9b6f4953726147f3350e3230f3e7dcb9e60dcd0fb1b40562599c33"
+    },
+    {
+      "path": "src/follow_the_money/training.py",
+      "bytes": 9288,
+      "sha256": "c468cdb0690e51faa167ba0c0afc8b2a07eb72dfc6e8717941f74632ae393ad6"
+    },
+    {
+      "path": "src/follow_the_money/transport.py",
+      "bytes": 13240,
+      "sha256": "6aa0cfa1597bc31d5bcd0b6be4420eaafbbca4c932fcdfed0443e2332d9779f3"
+    },
+    {
+      "path": "src/follow_the_money/ui.py",
+      "bytes": 6543,
+      "sha256": "a46babf1bb49f39015d5a4898c2a3b62014fe4200225087380e579cd9eb1778f"
+    },
+    {
+      "path": "src/follow_the_money/views.py",
+      "bytes": 1745,
+      "sha256": "2a623a050c07a7d51ebebee130d350fd41d132f807b50ac7456c345874319911"
+    },
+    {
+      "path": "tests/follow_the_money/conftest.py",
+      "bytes": 3040,
+      "sha256": "f2ff931a5da76aa1ee36fa8a996d8dab2804ead813f21615a0552cd1213bcd34"
+    },
+    {
+      "path": "tests/follow_the_money/test_acquire.py",
+      "bytes": 2235,
+      "sha256": "27d17437650e25c90384392fa80d7947be5fdd324336438ab21b853039f9edb9"
+    },
+    {
+      "path": "tests/follow_the_money/test_agent_service.py",
+      "bytes": 10618,
+      "sha256": "1ead396d9f92121ac79556e9e192c2b1126661e0ec9d2f279dfbb04499ee8e1b"
+    },
+    {
+      "path": "tests/follow_the_money/test_clients.py",
+      "bytes": 7550,
+      "sha256": "a259bef7df3dd6d8d75669c48b811d25ce52db5ae44bc0acbcebc92b91e0e4fa"
+    },
+    {
+      "path": "tests/follow_the_money/test_contracts.py",
+      "bytes": 1416,
+      "sha256": "dc88513540cb008d2848e8f954006364bd22ee37ce098e77c2b33381e4a53325"
+    },
+    {
+      "path": "tests/follow_the_money/test_ftm_evaluation.py",
+      "bytes": 5557,
+      "sha256": "ba75f836f21ada9f297cda9542c6e1c0d17ee3d2b83a5b4c88b469fb4098069a"
+    },
+    {
+      "path": "tests/follow_the_money/test_ftm_review_security.py",
+      "bytes": 14893,
+      "sha256": "4b874bdc258d0eebfe236f2e3c404bfcbfd553a5b4fb8b0bdaf848f7b352fd57"
+    },
+    {
+      "path": "tests/follow_the_money/test_ftm_review_tracing.py",
+      "bytes": 21148,
+      "sha256": "00d6566ec16e2a0acb6b6a9c8e470beeaf21e323f79b80193b2a3494ccbfd668"
+    },
+    {
+      "path": "tests/follow_the_money/test_hardening.py",
+      "bytes": 4284,
+      "sha256": "2114c57ec369769a7643ed174b6d40b9fafbf5568fb3550c12b5c3a3e92e1853"
+    },
+    {
+      "path": "tests/follow_the_money/test_heuristics.py",
+      "bytes": 7193,
+      "sha256": "7aa127cdf00e2761ee4535f10031ef03449614ebdafa87c8468347d01b1f03be"
+    },
+    {
+      "path": "tests/follow_the_money/test_interfaces.py",
+      "bytes": 11602,
+      "sha256": "aa11a377d588ea1dde1a521af118ca4a30d26197111757e1c504573b065f189e"
+    },
+    {
+      "path": "tests/follow_the_money/test_labels.py",
+      "bytes": 2035,
+      "sha256": "1ab4a9300740a5e589836aa56c57225755303b7d6b0bbd98002bc49a3456eb9d"
+    },
+    {
+      "path": "tests/follow_the_money/test_m365.py",
+      "bytes": 4890,
+      "sha256": "4102127249b9d0e5cae7fdea80092e74e58750d588ff80ad9684f7888b4c95a9"
+    },
+    {
+      "path": "tests/follow_the_money/test_memory.py",
+      "bytes": 5763,
+      "sha256": "801946ae6c926313b6641e6593035b53fdff59f1d31478aed5bd56f173df4e44"
+    },
+    {
+      "path": "tests/follow_the_money/test_models.py",
+      "bytes": 6921,
+      "sha256": "647e642361db58a7c2fab44779fa0e15f2879f99d0971bca9b1ac1608dd4f85c"
+    },
+    {
+      "path": "tests/follow_the_money/test_seeds.py",
+      "bytes": 763,
+      "sha256": "437e76347c7d66dd83942f1b9953847c26f0e4363f68250a460848471920702d"
+    },
+    {
+      "path": "tests/follow_the_money/test_transport.py",
+      "bytes": 5973,
+      "sha256": "7368605e7c10ed5ec102435673057db45d047f3c60c4c15b092e0b8d1f42c5c3"
+    }
+  ],
+  "source_set_sha256": "55003a80b6185e2217f493c062304de8a6312240d27d24c894b6be94d3101eef"
+}

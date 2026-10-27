@@ -1,0 +1,32 @@
+{
+  "schema": "ftm-tasks-v1",
+  "evidence_kind": "synthetic",
+  "tasks": [
+    {
+      "id": "branching-service",
+      "chain": "bitcoin",
+      "seed": "syn_seed_a",
+      "endpoint": "syn_exchange",
+      "max_calls": 12,
+      "max_hops": 5,
+      "criterion": "reach published fictional service without traversing service"
+    },
+    {
+      "id": "coinjoin-stop",
+      "chain": "bitcoin",
+      "seed": "syn_coinjoin",
+      "max_calls": 5,
+      "max_hops": 5,
+      "criterion": "stop at suspected CoinJoin without merging inputs"
+    },
+    {
+      "id": "tron-transfer",
+      "chain": "tron",
+      "seed": "syn_tron_seed",
+      "endpoint": "syn_tron_exchange",
+      "max_calls": 6,
+      "max_hops": 3,
+      "criterion": "follow USDT contract transfers without Bitcoin heuristics"
+    }
+  ]
+}

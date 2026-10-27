@@ -1,0 +1,18 @@
+{
+  "schema": "ftm-m365-generation-v1",
+  "openapi_sha256": "f4d9b44c2cc7346c9e1e4b2e0d138d17edc216ee8235023517d404e7873099e9",
+  "model_operations": [
+    "get_case_summary",
+    "list_cases",
+    "query_case_memory",
+    "start_trace"
+  ],
+  "excluded": [
+    "human_approval",
+    "recover_case",
+    "add_rule",
+    "revise_memory"
+  ],
+  "deployment": "BLOCKED: no tenant/Azure; invalid server and vault placeholders are deliberate",
+  "approval_template": "Not wired to the local model agent; a future trusted host must authenticate the reviewer and revalidate the case digest."
+}

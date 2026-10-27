@@ -1,0 +1,68 @@
+{
+  "schema": "ftm-sources-v1",
+  "sources": [
+    {
+      "id": "ransomwhere-1_1_0",
+      "url": "https://zenodo.org/api/records/13999026/files/ransomwhere.json/content",
+      "license": "CC-BY-4.0",
+      "max_bytes": 6000000,
+      "approved": true,
+      "revision": "1.1.0",
+      "sha256": "5c939f3f0d390813f78e649cdd5cd50dcac6ac286e8c9ba52206b273f761082d"
+    },
+    {
+      "id": "graphsense-binance",
+      "url": "https://raw.githubusercontent.com/graphsense/graphsense-tagpacks/dda9b42b511a090d843a1695015a49987ae955bd/packs/binance.yaml",
+      "license": "MIT (GraphSense repository); upstream attribution retained",
+      "max_bytes": 10000,
+      "approved": true,
+      "revision": "dda9b42b511a090d843a1695015a49987ae955bd",
+      "sha256": "446a85840b4318d27ec8a3ab74a3fa2779ddd87907ddc0ceff428d6ff18bedd7"
+    },
+    {
+      "id": "graphsense-license",
+      "url": "https://raw.githubusercontent.com/graphsense/graphsense-tagpacks/dda9b42b511a090d843a1695015a49987ae955bd/LICENSE",
+      "license": "MIT",
+      "max_bytes": 10000,
+      "approved": true,
+      "revision": "dda9b42b511a090d843a1695015a49987ae955bd",
+      "sha256": "2c9bb5e1d50203d505b997babbb23eebda868f1280dc5ef5854263ba0dd7c4ed"
+    },
+    {
+      "id": "ofac-btc",
+      "url": "https://raw.githubusercontent.com/0xB10C/ofac-sanctioned-digital-currency-addresses/6ae2472c439b9bb2788f8df662052ae31854aa97/sanctioned_addresses_XBT.json",
+      "license": "Public US Treasury factual list; extractor MIT; no completeness warranty",
+      "max_bytes": 100000,
+      "approved": true,
+      "revision": "6ae2472c439b9bb2788f8df662052ae31854aa97",
+      "sha256": "d4299f5afe07a10363b50a675329d390a1cc4b185de40ecb4a2fc2051a6e50bc"
+    },
+    {
+      "id": "ofac-tron",
+      "url": "https://raw.githubusercontent.com/0xB10C/ofac-sanctioned-digital-currency-addresses/6ae2472c439b9bb2788f8df662052ae31854aa97/sanctioned_addresses_TRX.json",
+      "license": "Public US Treasury factual list; extractor MIT; no completeness warranty",
+      "max_bytes": 100000,
+      "approved": true,
+      "revision": "6ae2472c439b9bb2788f8df662052ae31854aa97",
+      "sha256": "7590048dac7db53817eebcb1c901167fd979e17d4ba805c7009e585fa7ebd0fe"
+    },
+    {
+      "id": "colonial-affidavit",
+      "url": "https://www.justice.gov/archives/opa/press-release/file/1402056/dl?inline",
+      "license": "US federal government court filing; public record",
+      "max_bytes": 5000000,
+      "approved": true,
+      "evidence_kind": "court_document",
+      "sha256": "4ff9bcbcbfd0fa0459a831f97d0192c4a5d8dbb1cba1a671748af2deb69f6d8f"
+    },
+    {
+      "id": "doj-scam-2025",
+      "url": "https://www.justice.gov/usao-ma/media/1390101/dl?inline=",
+      "license": "US federal government court filing; public record",
+      "max_bytes": 5000000,
+      "approved": true,
+      "evidence_kind": "court_document",
+      "sha256": "53ae96300ca66650efac81fb629d080f17d73300e8c77a26629d757ef917bf5f"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "ftm-final-verification-v1",
+  "recorded_at": "2026-10-26T22:39:53.281448+00:00",
+  "python": "3.14.9",
+  "uv": "0.13.5",
+  "ruff": "0.14.10",
+  "platform": "WSL Ubuntu Linux",
+  "source_set_sha256": "8a7af2a7fc82d4e800f312da9050d32da3dcb29c4bd4c44ef3b2e4c1db8baa8b",
+  "project2_tests": {
+    "passed": 133,
+    "failed": 0,
+    "warnings": 114,
+    "seconds": 85.91
+  },
+  "targeted_project1_packaging_tooling_tests": {
+    "passed": 358,
+    "failed": 0,
+    "seconds": 176.01
+  },
+  "total_final_selected_tests": 491,
+  "full_project1_suite_run": false,
+  "ruff_check": "passed",
+  "ruff_format_files": 183,
+  "lock_packages": 170,
+  "build": "wheel and sdist passed; 154 package source files byte-verified",
+  "tests_parallelism": 1,
+  "servers_stopped_ports": [
+    3978,
+    56150
+  ],
+  "windows_wheels_checked": true,
+  "windows_runtime_tested": false,
+  "hosted_ci_run": false,
+  "git_commit": "BLOCKED: read-only worktree metadata; owner authorized uncommitted handoff",
+  "result_hashes": {
+    "training-results.json": "af9cbeed721ee180ce1a1038e9a69a7dea3ec558afca515a5d7dc5fcb2cf5d70",
+    "evaluation-results.json": "253b378bf85e14a09085dd3e0a3f9380d8d6f770676ec645bf94594cdb2a1add",
+    "public-gold-results.json": "b4e29c4424364040ddd985bff22640d2bda7a29eed861c1688028cab59edb6f3",
+    "m365/playground-receipt.json": "e5763eb1e719184c935f20099bccaba28287dad28fc9a05658fb006be2eaa873"
+  },
+  "lf_verified_files": 86,
+  "final_report_sha256": "416485e3d942aad8202114d4cb0e7bc088c7b05ab8d16d0bbc382540b8fcea4b"
+}

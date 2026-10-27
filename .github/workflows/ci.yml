@@ -1,0 +1,46 @@
+name: Offline checks
+"on":
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ftm-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  offline:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      UV_PYTHON_DOWNLOADS: never
+      PYTHONDONTWRITEBYTECODE: "1"
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      LANGSMITH_TRACING: "false"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+    steps:
+      # Verified full-commit action pins.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: "3.14.0"
+          check-latest: false
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e
+        with:
+          version: "0.13.5"
+          checksum: f68d291c75783122dad58ab77def0e13f3233f358731db5d6d7e8715603b928f # pragma: allowlist secret
+          enable-cache: false
+      - name: Install locked dependencies with all extras
+        run: uv sync --locked --dev --extra ml --extra m365 --group qa
+      - name: Optional packages must import, so their tests cannot silently skip
+        run: uv run --no-sync python -c "import torch_geometric, xgboost, sklearn, aiohttp, microsoft_agents.hosting.aiohttp"
+      - name: Offline deterministic tests (external sockets denied by fixture)
+        run: uv run --no-sync pytest -q -p no:cacheprovider
+      - name: Lint and format
+        run: |
+          uv run --no-sync ruff check src tests scripts
+          uv run --no-sync ruff format --check src tests scripts

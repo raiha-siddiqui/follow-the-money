@@ -1,0 +1,53 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Review case ${case_id}",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Evidence SHA-256: ${evidence_sha256}",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Review all cited transactions and critic withdrawals before deciding. Requests remain drafts; nothing is sent.",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "id": "note",
+      "label": "Reviewer note",
+      "maxLength": 1000,
+      "isMultiline": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Approve draft only",
+      "data": {
+        "verb": "human_review_only",
+        "case_id": "${case_id}",
+        "evidence_sha256": "${evidence_sha256}",
+        "request_id": "${decision_request_id}",
+        "decision": "approve"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Reject",
+      "data": {
+        "verb": "human_review_only",
+        "case_id": "${case_id}",
+        "evidence_sha256": "${evidence_sha256}",
+        "request_id": "${decision_request_id}",
+        "decision": "reject"
+      }
+    }
+  ]
+}
